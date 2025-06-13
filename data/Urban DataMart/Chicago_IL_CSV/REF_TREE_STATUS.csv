@@ -1,0 +1,6 @@
+VALUE,ABBR,MEANING,RETIRED
+0,No Status,No status – tree is not presently in the sample (remeasurement plots only).,N
+1,Live,Live tree,N
+2,Dead,Dead tree,N
+3,Cut & Utilized,"Cut & Utilized – Collected on remeasurement trees only. A tree that occupied a forested condition in the previous inventory only. A tree that has been cut and removed by direct human activity related to harvesting, silviculture or land clearing. The tree is assumed to have been utilized for a commercial purposes, such as timber, chips, or firewood, and noncommercial purposes such as domestic firewood, landscaping, and fence posts.",N
+4,Removed,"Removed – Collected on remeasurement trees only. A tree that has been removed by direct human activity but not likely utilized for a commercial product, such as timber, chips, or firewood, and noncommercial purposes such as domestic firewood, landscaping, and fence posts.",N

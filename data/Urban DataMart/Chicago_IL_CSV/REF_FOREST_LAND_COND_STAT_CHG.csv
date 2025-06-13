@@ -1,0 +1,5 @@
+VALUE,ABBR,MEANING,RETIRED
+0,No change,No change – the condition is not a new forested condition nor is it a new condition that is the result of a previously forested condition no longer qualifying as such.,N
+1,Physical changes,Physical changes - condition status changed due to actual on-the-ground physical change either natural or human-caused.,N
+2,Crew error,Crew error - condition status changed due to a previous crew’s error.,N
+3,Procedural changes,Procedural changes – condition status changed due to a change in variable definition or procedures.,N

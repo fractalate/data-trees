@@ -1,0 +1,18 @@
+VALUE,ABBR,MEANING,RETIRED
+11,NationalForest,National Forest,N
+12,NationalGrassland,National Grassland and/or Prairie,N
+13,OtherFS,Other Forest Service land,N
+21,NationalPark,National Park Service,N
+22,BLM,Bureau of Land Management,N
+23,FWS,Fish and Wildlife Service,N
+24,DOE,Departments of Defense/Energy (Including the Army Corps of Engineers),N
+25,OtherFederal,Other Federal,N
+31,State,State including state public universities,N
+32,Local,"Local (County, Municipality, etc.) including water authorities",N
+33,OtherPublic,Other Non-Federal Public,N
+41,Corporate,"Corporate, including Native Corporations in Alaska and private universities (including private educational institutions)",N
+42,NGO,"Non-Governmental Conservation / Natural Resources Organization Examples: Nature Conservancy, National Trust for Private Lands, Pacific Forest Trust, Boy Scouts of America, etc.",N
+43,Club,"Unincorporated Partnerships / Associations / Clubs. Examples: Hunting Clubs that own, not lease property, recreation associations, 4H, churches, etc.",N
+44,NativeAmerican,Native American (Indian) – within reservation boundaries,N
+45,PrivateIndividual,"Individual and Family, including trusts, estates, and family partnerships",N
+46,Private,Undifferentiated private ownership,N

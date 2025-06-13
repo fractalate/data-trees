@@ -1,0 +1,8 @@
+VALUE,ABBR,MEANING,RETIRED
+0,None,None – no water sources within the accessible forest/nonforest land,N
+1,StreamPond,Permanent streams or ponds too small to qualify as noncensus water,N
+2,SwampBogMarsh,"Permanent water in the form of deep swamps, bogs, marshes without standing trees present and less than 1.0 ac in size, or forested swamps, bogs or marshes classified as accessible forest land with standing trees",N
+3,DitchCanal,"Ditch/canal – human-made channels used as a means of moving water, such as irrigation or drainage which are too small to qualify as noncensus water",N
+4,TemporaryStream,Temporary streams,N
+5,FloodZone,Flood zones – evidence of flooding when bodies of water exceed their natural banks,N
+9,Other,Other temporary water – specify in plot notes,N

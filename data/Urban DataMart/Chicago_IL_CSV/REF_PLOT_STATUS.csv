@@ -1,0 +1,5 @@
+VALUE,ABBR,MEANING,RETIRED
+1,Sampled: Forest,Sampled - at least one accessible forest land condition present,N
+2,Sampled: Nonforest,Sampled ��� no accessible forest but at least one accessible nonforest land condition present,N
+3,Sampled: Water,Sampled- no accessible forest or non-forest land condition present. i.e. Condition is either census and/or noncensus water.,N
+4,Nonsampled,Nonsampled,N

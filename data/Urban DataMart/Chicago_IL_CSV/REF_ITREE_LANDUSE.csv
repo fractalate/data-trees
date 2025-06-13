@@ -1,0 +1,9 @@
+VALUE,ABBR,MEANING,RETIRED
+1,Agriculture,Agriculture (10),N
+2,Institutional/Commercial,"Collapsed landuses: Institutional (22), Commercial (23)",N
+3,Residential,Residential (20),N
+4,Multi-family,Multi-family (21),N
+5,Cemetery/Park/Golf,"Collapsed landuses: Cemetery (25), Park (40), Golf course (41)",N
+6,Transportation/Utility,"Collapsed landuses: Transportation (30), Utility (31)",N
+7,Water,Water (50),N
+8,Unused/Other,"Collapsed landuses: Unused (24), Other (60)",N

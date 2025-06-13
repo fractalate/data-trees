@@ -1,0 +1,4 @@
+VALUE,ABBR,MEANING,RETIRED
+1,Planted,At least half of the seedling count for an individual species appear to have been planted at some point in the past,N
+2,Natural,At least half of the seedling count for an individual species appear to be of a natural origin,N
+3,Not Sure,Unable to confidently determine if at least half of the seedling count for an individual species was planted or are natural,N

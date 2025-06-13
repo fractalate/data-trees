@@ -1,0 +1,75 @@
+NAME,DESCRIPTION,EXPRESSION,WHERE_CLAUSE,DOMAIN_TYPE,CN
+Invasive Species Cover,Invasive Species Area (acres),ispcnd.cover_pct/100,ispcnd.subp = 1 AND ispcnd.cover_pct > 0 AND cnd.cond_status_cd < 5,INVASIVE,1737856881290487
+Electricity Use Avoided Dollar Value (iTree),Electricity Use (dollar value),"coalesce(binta.elec_avoid_value_sum,0) * (CASE WHEN binta.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299054126144
+Fuel Carbon Emissions Avoided,Carbon Emissions (pounds per year),"coalesce(ee.fuel_c_avoided,0) * (CASE WHEN ee.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299053126144
+Fuel Use Avoided,Fuel Use (British Thermal Units),"coalesce(ee.fuel_avoided,0) * (CASE WHEN ee.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299051126144
+Fuel Use Avoided Dollar Value (iTree),Fuel Use (dollar value),"coalesce(binta.fuel_avoid_value_sum,0) * (CASE WHEN binta.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299055126144
+"Gross C Sequestration (FIA), Live Trees",Carbon Sequestration (per acre per year),mtre.gross_carbon_sequestration * mtre.tpa_unadj/2000,,MOTHER_TREE,552299021126144
+"Gross C Sequestration (iTree), Live Trees",Carbon Sequestration (per acre per year),mtre.gross_c_sequestration_itree * mtre.tpa_unadj/2000,,MOTHER_TREE,552299020126144
+Leaf Area (iTree),Leaf Area (square feet per acre),mtre.leaf_area_itree*mtre.tpa_unadj,,MOTHER_TREE,552299022126144
+Leaf Biomass (iTree),Leaf Biomass (short tons per acre),mtre.leaf_biomass_itree * mtre.tpa_unadj/2000,,MOTHER_TREE,552299023126144
+Number of Live Mother Trees,Trees (per acre),mtre.tpa_unadj,mtre.statuscd = 1,MOTHER_TREE,1268200609290487
+Number of Live and Dead Mother Trees,Trees (per acre),mtre.tpa_unadj,(mtre.statuscd = 1 OR (mtre.statuscd = 2 AND mtre.standing_dead_cd = 1)),MOTHER_TREE,1536921219290487
+Number of Live Seedlings,Seedlings (per acre),sdl.tpa_unadj,,SEEDLING,552299047126144
+"Aboveground Biomass, Live and Dead Trees",Biomass (dry short tons),"COALESCE(tre.DRYBIO_AG,0) * tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299035126144
+"Aboveground Biomass, Saplings",Biomass (dry short tons),"COALESCE(tre.DRYBIO_AG,0) * tre.tpa_unadj/2000",tre.subp > 1 AND (tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,552299031126144
+"Aboveground Biomass, Woodland",Biomass (dry short tons),"COALESCE(tre.DRYBIO_AG,0) * tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,552299037126144
+"Aboveground Carbon, Live and Dead Trees",Carbon (short tons),"COALESCE(tre.CARBON_AG,0) * tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299039126144
+"Basal Area, Live Trees",Basal area (square feet),tre.basal_area*tre.tpa_unadj,tre.statuscd = 1,TREE,552299016126144
+"Belowground Biomass, Live and Dead Trees",Biomass (dry short tons),"COALESCE(tre.DRYBIO_BG,0) * tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299038126144
+"Belowground Carbon, Live and Dead Trees",Carbon (short tons),"COALESCE(tre.CARBON_BG,0) * tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299040126144
+"Bole Bark and Wood Biomass, Live Timber Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_bole, 0) + COALESCE(tre.drybio_bole_bark,0))*tre.tpa_unadj/2000",tre.subp =  1 AND tre.statuscd = 1  AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,552299027126144
+"Gross Bole Wood Volume, Live Timber Trees",Volume (cubic feet),tre.VOLCFGRS*tre.tpa_unadj,tre.subp = 1 AND tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,552299032126144
+Gross Sawlog Wood Volume,Volume (cubic feet),tre.VOLCSGRS*tre.tpa_unadj,tre.volcsgrs is NOT NULL,TREE,552299024126144
+Gross Sawlog Wood Volume (Board Feet),Volume (board feet),tre.VOLBFGRS*tre.tpa_unadj,tre.volbfgrs is NOT NULL,TREE,552299048126144
+"Gross Total-Stem Wood Volume, Live & Dead Woodland",Volume (cubic feet),tre.VOLTSGRS*tre.tpa_unadj,tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1674062047290487
+"Gross Total-Stem Wood Volume, Live Timber",Volume (cubic feet),tre.VOLTSGRS*tre.tpa_unadj,tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1676617472290487
+"Gross Total-Stem Wood Volume, Live Trees",Volume (cubic feet),tre.VOLTSGRS*tre.tpa_unadj,tre.statuscd = 1,TREE,1676617471290487
+"Gross Total-Stem Wood Volume, Live Woodland",Volume (cubic feet),tre.VOLTSGRS*tre.tpa_unadj,tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1674062048290487
+"Gross Total-Stem Wood Volume, Live and Dead Timber",Volume (cubic feet),tre.VOLTSGRS*tre.tpa_unadj,(tre.statuscd = 1 OR tre.standing_dead_cd =1) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1676617469290487
+"Gross Total-Stem Wood Volume, Live and Dead Trees",Volume (cubic feet),tre.VOLTSGRS*tre.tpa_unadj,tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1),TREE,1676617465290487
+"Net Bole Wood Volume, Live Timber Trees",Volume (cubic feet),tre.VOLCFNET*tre.tpa_unadj,tre.statuscd = 1,TREE,552299033126144
+Net Sawlog Wood Volume,Volume (cubic feet),tre.VOLCSNET*tre.tpa_unadj,tre.volcsnet is NOT NULL,TREE,552299025126144
+Net Sawlog Wood Volume (Board Feet),Volume (board feet),tre.VOLBFNET*tre.tpa_unadj,tre.volbfnet is NOT NULL,TREE,552299049126144
+Number of Live Trees,Trees (per acre),tre.tpa_unadj,tre.statuscd = 1,TREE,552299015126144
+Number of Live and Dead Trees,Trees (per acre),tre.tpa_unadj,(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,1536921218290487
+Sawlog Bark and Wood Biomass,Biomass (dry short tons),"(COALESCE(tre.DRYBIO_SAWLOG,0) +COALESCE(tre.DRYBIO_SAWLOG_BARK,0)) * tre.tpa_unadj/2000",(tre.DRYBIO_SAWLOG IS NOT NULL AND tre.DRYBIO_SAWLOG_BARK IS NOT NULL),TREE,552299030126144
+"Sound Bole Wood Volume, Live Timber Trees",Volume (cubic feet),tre.VOLCFSND*tre.tpa_unadj,tre.statuscd = 1,TREE,552299034126144
+Sound Sawlog Wood Volume,Volume (cubic feet),tre.VOLCSSND*tre.tpa_unadj,tre.volcssnd is NOT NULL,TREE,552299026126144
+"Sound Total-Stem Wood Volume, Live & Dead Woodland",Volume (cubic feet),tre.VOLTSSND*tre.tpa_unadj,tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1674062049290487
+"Sound Total-Stem Wood Volume, Live Timber",Volume (cubic feet),tre.VOLTSSND*tre.tpa_unadj,tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1676617585290487
+"Sound Total-Stem Wood Volume, Live Trees",Volume (cubic feet),tre.VOLTSSND*tre.tpa_unadj,tre.statuscd = 1,TREE,1676617584290487
+"Sound Total-Stem Wood Volume, Live Woodland",Volume (cubic feet),tre.VOLTSSND*tre.tpa_unadj,tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1674062050290487
+"Sound Total-Stem Wood Volume, Live and Dead Timber",Volume (cubic feet),tre.VOLTSSND*tre.tpa_unadj,(tre.statuscd =1 OR tre.standing_dead_cd = 1) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1676617474290487
+"Sound Total-Stem Wood Volume, Live and Dead Trees",Volume (cubic feet),tre.VOLTSSND*tre.tpa_unadj,tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1),TREE,1676617473290487
+"Stump Bark Wood Biomass, Live and Dead Timber Tree",Biomass (dry short tons),"(coalesce(tre.DRYBIO_STUMP,0) + (coalesce(tre.DRYBIO_STUMP_BARK, 0))) *tre.tpa_unadj/ 2000",tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N') AND (tre.DRYBIO_STUMP IS NOT NULL AND tre.DRYBIO_STUMP_BARK IS NOT NULL),TREE,552299028126144
+"Top and Limb Biomass, Live and Dead Timber Trees",Biomass (dry short tons),"((coalesce(tre.drybio_stem,0)+coalesce(tre.drybio_stem_bark,0))-(coalesce(tre.drybio_bole,0)+coalesce(tre.drybio_bole_bark,0)+(coalesce(tre.drybio_stump,0)+coalesce(tre.drybio_stump_bark,0)))+coalesce(tre.drybio_branch,0))*tre.tpa_unadj/2000",tre.subp = 1 AND (tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299029126144
+"Whole-tree Biomass, Dead Timber Saplings",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.subp > 1 AND tre.statuscd = 2 AND tre.standing_dead_cd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1640859923290487
+"Whole-tree Biomass, Dead Timber Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.subp = 1 AND tre.statuscd = 2 AND tre.standing_dead_cd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1640859922290487
+"Whole-tree Biomass, Dead Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.statuscd = 2 AND tre.standing_dead_cd = 1,TREE,1640859921290487
+"Whole-tree Biomass, Dead Woodland Species",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.statuscd = 2 AND tre.standing_dead_cd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1640859924290487
+"Whole-tree Biomass, Live Timber Saplings",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.subp > 1 AND tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1640859919290487
+"Whole-tree Biomass, Live Timber Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.subp = 1 AND tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1640859918290487
+"Whole-tree Biomass, Live Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.statuscd = 1,TREE,1640859917290487
+"Whole-tree Biomass, Live Woodland Species",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.statuscd = 1 AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1640859920290487
+"Whole-tree Biomass, Live and Dead Timber Saplings",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.subp > 1 AND (tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1640859915290487
+"Whole-tree Biomass, Live and Dead Timber Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",tre.subp = 1 AND (tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'N'),TREE,1640859913290487
+"Whole-tree Biomass, Live and Dead Trees",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299017126144
+"Whole-tree Biomass, Live and Dead Woodland Species",Biomass (dry short tons),"(COALESCE(tre.drybio_ag,0)+COALESCE(tre.drybio_bg,0)) *tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)) AND tre.spcd IN (SELECT spcd FROM fs_fiadb_urban.ref_species WHERE woodland = 'Y'),TREE,1640859916290487
+All Sampled Conditions,Condition Proportion,spcnd.condprop_unadj,spcnd.subp = 1 AND cnd.cond_status_cd < 5,LAND,552299008126144
+Proportion Building Cover,Condition Proportion,spcnd.gr_cov_pct_bldg/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299009126144
+Proportion Herbaceous Cover,Condition Proportion,spcnd.gr_cov_pct_herbaceous/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299012126144
+Proportion Impervious Cover,Condition Proportion,spcnd.gr_cov_pct_impervious/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299010126144
+Proportion Permeable Cover,Condition Proportion,spcnd.gr_cov_pct_permeable/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299011126144
+Proportion Shrub/Seed Cover,Condition Proportion,spcnd.pct_shrub_seed_cover/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299018126144
+Proportion Tree Cover,Condition Proportion,spcnd.pct_tree_cover/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299014126144
+Proportion Water Cover,Condition Proportion,spcnd.gr_cov_pct_water/100*spcnd.condprop_unadj,spcnd.subp = 1,LAND,552299013126144
+"Basal Area, Live Mother Trees",Basal area (square feet),mtre.basal_area*mtre.tpa_unadj,mtre.statuscd = 1,MOTHER_TREE,1268196482290487
+"Carbon Emission Avoided (iTree), Dollar Value",Carbon Emissions (dollar value),"coalesce(binta.carbon_avoid_value_sum,0) * (CASE WHEN binta.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299056126144
+"Carbon Storage (iTree), Live and Dead Trees",Carbon (short tons),"COALESCE(mtre.carbon_storage_itree,0) * mtre.tpa_unadj/2000",,MOTHER_TREE,552299042126144
+Compensatory Value (iTree),Compensatory Value (dollar value),"COALESCE(mtre.compensatory_value_itree,0)*mtre.tpa_unadj",,MOTHER_TREE,552299046126144
+Crown Ground Area (iTree),Crown Area (square feet),"COALESCE(mtre.crown_ground_area_itree,0)*mtre.tpa_unadj",,MOTHER_TREE,552299043126144
+"Dry Total Biomass (iTree), Live and Dead Trees",Biomass (short tons),"COALESCE(mtre.dry_tot_biomass_itree,0) * mtre.tpa_unadj/2000",,MOTHER_TREE,552299041126144
+Electricity Carbon Emissions Avoided,Carbon Emissions (pounds per year),"coalesce(ee.elec_c_avoided,0) * (CASE WHEN ee.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299052126144
+Electricity Use Avoided,Electricity Use (kilowatt hours),"coalesce(ee.elec_avoided, 0) * (CASE WHEN ee.subp = 1 THEN 6.0180462857 ELSE 74.9652824512 END)",,MOTHER_TREE,552299050126144
+"Whole-tree Carbon Content, Live and Dead Trees",Carbon (short tons),"(COALESCE(tre.CARBON_AG,0)+COALESCE(tre.CARBON_BG,0))*tre.tpa_unadj/2000",(tre.statuscd = 1 OR (tre.statuscd = 2 AND tre.standing_dead_cd = 1)),TREE,552299019126144

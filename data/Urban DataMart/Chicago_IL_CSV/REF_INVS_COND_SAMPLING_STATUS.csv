@@ -1,0 +1,4 @@
+VALUE,ABBR,MEANING,RETIRED
+1,"Sampled, plants present","Condition sampled, invasive plants present",N
+2,"Sampled, plants not present","Condition sampled, invasive plants not present",N
+3,Not sampled,Condition not sampled for invasive plants,N

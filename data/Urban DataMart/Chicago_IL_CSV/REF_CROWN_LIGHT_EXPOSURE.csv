@@ -1,0 +1,8 @@
+VALUE,ABBR,MEANING,RETIRED
+0,No Light ,"The tree/Mother Tree unit receives no light on the top and less than full light on the sides because it is shaded by trees, vines, or other vegetation; or the tree has no crown by definition.",N
+1,Top,The tree/Mother Tree unit receives some light on the top.,N
+2,Top and 1 Side,The tree/Mother Tree unit receives some light on the top and full light on 1 quarter.,N
+3,Top and 2 Sides,"The tree/Mother Tree unit receives some light on the top and full light on 2
+quarters.",N
+4,Top and 3 Sides,The tree/Mother Tree unit receives some light on the top and full light on 3 quarters.,N
+5,Top and 4 Sides,The tree/Mother Tree unit receives full light on the top and full light on 4 quarters.,N

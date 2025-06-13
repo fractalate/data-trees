@@ -1,0 +1,12 @@
+VALUE,ABBR,MEANING,RETIRED
+10,Forest land,Forest land (1),N
+11,Agriculture,"Collapsed landuses: Agriculture (100), Cropland (110), Pasture (120), IdleFarmland (130), Orchard (140), ChristmasPlantation (150), WildlifeOpening (160), Windbreak (170)",N
+12,Rangeland/Chaparral,"Collapsed landuses: Rangeland (200), NonforestChaparral (450)",N
+13,Commercial/Industrial,"Collapsed landuses: Developed (300), Cultural (310), Institutional (313), Commercial (314), MiningWasteland (340)",N
+14,Residential,Residential (311),N
+15,Multi-family,Multi-family (312),N
+16,Recreation/Cemetery,"Collapsed landuses: Cemetery (316), Recreation (330), Park (331), GolfCourse (332)",N
+17,Rights-of-Way,"Collapsed landuses: Rights-of-way (320), Transportation (321), Utility (322)",N
+18,OtherNonforest,"Collapsed landuses: Other (400), Nonvegetated (410), Wetland (420), Beach (430)",N
+19,Water,Water (900),N
+20,Nonsampled,Nonsampled (910),N

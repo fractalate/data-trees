@@ -1,0 +1,4 @@
+VALUE,ABBR,MEANING,RETIRED
+1,Initial Density Class,Initial density class,N
+2,Density Class 2,Density class 2 - density different than 1,N
+3,Density Class 3,Density class 3 - density different than 1 and 2,N

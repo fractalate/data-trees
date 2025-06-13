@@ -1,0 +1,9 @@
+VALUE,ABBR,MEANING,RETIRED
+10,Insect,Insect,N
+20,Disease,Disease,N
+30,Fire,Fire,N
+40,Animal,Animal,N
+50,Weather,Weather,N
+60,Vegetation,"Vegetation (suppression, competition, vines/kudzu)",N
+70,Unknown,"Unknown/not sure/other - includes death from human activity not related to silvicultural or land clearing activity (accidental, random, etc.). TREE NOTES required.",N
+80,Silvicultural,"Silvicultural or land clearing activity (death caused by harvesting or other silvicultural activity, including girdling, chaining, etc., or to land clearing activity)",N

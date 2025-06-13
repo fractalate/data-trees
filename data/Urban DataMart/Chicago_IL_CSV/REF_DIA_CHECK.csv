@@ -1,0 +1,4 @@
+VALUE,ABBR,MEANING,RETIRED
+0,Measured,"Diameter measured accurately (i.e, diameter tape, wedge prism and pentaprism).",N
+1,Estimated,Diameter estimated.,N
+2,Moved Measurement Point,Diameter measured at different location than previous measurement (remeasurement trees only). RMRS - or when previous diameter incorrectly recorded.,N

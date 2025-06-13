@@ -1,0 +1,6 @@
+LABEL,DESCRIPTION,RANK,EXPRESSION,REQ_NONRESPONSE_COMPENSATION,CN
+SELECTED,Sampling point must be selected for inclusion in the sample,1,PLT.PLOT_STATUS_CD IS NOT NULL,N,552299057126144
+SAMPLED,Sampling points must be at least partially sampled.,2,"ID_PLOT.PLOT_STATUS_CD IN (1,2,3)",Y,552299058126144
+FULLY SAMPLED,Sampling points must be completely sampled.,3,CALC_UTILS.plt_prop_sampled(ID_PLOT.CN) = 1,Y,552299059126144
+REMEASURED,Sampling points must be at least partially sampled at two consecutive points in time.,4,ID_PLOT.KINDCD = 2,Y,552299060126144
+INVASIVE,Sampling point must participate in the Invasive Species Protocol.,3,id_plot_invasive.cn = id_plot_invasive_pca.rec_cn and id_plot_invasive_pca.retired_date IS NULL,Y,552299061126144

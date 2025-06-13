@@ -1,0 +1,7 @@
+VALUE,ABBR,MEANING,RETIRED
+0,None,None - No observable treatment.,N
+10,Cutting,Cutting - The removal of one or more trees from a stand,N
+20,Site Preparation,"Site preparation - Clearing, slash burning, chopping, disking, bedding, or other practices clearly intended to prepare a site for either natural or artificial regeneration.",N
+30,Artificial Regeneration,"Artificial regeneration - Following a disturbance or treatment (usually cutting), a new stand where at least 50% of the live trees present resulted from planting or direct seeding.",N
+40,Natural Regeneration,"Natural regeneration - Following a disturbance or treatment (usually cutting), a new stand where at least 50% of the live trees present (of any size) were established through the growth of existing trees and/or natural seeding or sprouting.",N
+50,Other,"Other silvicultural treatment - The use of fertilizers, herbicides, girdling, pruning, invasive species removal or other activities (not covered by codes 10-40) designed to improve the commercial value of the residual stand, or chaining, which is a practice used on woodlands to encourage wildlife forage.",N

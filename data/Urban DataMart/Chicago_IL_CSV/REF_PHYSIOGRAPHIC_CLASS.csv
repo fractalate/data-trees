@@ -1,0 +1,18 @@
+VALUE,ABBR,MEANING,RETIRED
+11,DryTops,Dry Tops - Ridge tops with thin rock outcrops and considerable exposure to sun and wind.,N
+12,DrySlopes,Dry Slopes - Slopes with thin rock outcrops and considerable exposure to sun and wind. Includes most steep slopes with a southern or western exposure.,N
+13,DeepSands,"Deep Sands - Sites with a deep, sandy surface subject to rapid loss of moisture following precipitation. Typical examples include sand hills, sites along the beach and shores of lakes and streams, and many deserts.",N
+19,OtherXeric,Other Xeric - All dry physiographic sites not already described.,N
+21,Flatwoods,"Flatwoods - Flat or fairly level sites outside flood plains. Excludes deep sands and wet, swampy sites.",N
+22,RollingUplands,"Rolling Uplands - Hills and gently rolling, undulating terrain and associated small streams. Excludes deep sands, all hydric sites, and streams with associated flood plains.",N
+23,MoistSlopes,"Moist Slopes and Coves - Moist slopes and coves with relatively deep, fertile soils. Often these sites have a northern or eastern exposure and are partially shielded from wind and sun. Includes moist mountain tops and saddles.",N
+24,NarrowFloodPlains,"Narrow Flood plains/Bottomlands - Flood plains and bottomlands less than 1/4-mile in width along rivers and streams. These sites are normally well drained but are subjected to occasional flooding during periods of heavy or extended precipitation. Includes associated levees, benches, and terraces within a 1/4 mile limit. Excludes swamps, sloughs, and bogs.",N
+25,BroadFloodPlains,"Broad Flood plains/Bottomlands - Flood plains and bottomlands 1/4 mile or wider in width along rivers and streams. These sites are normally well drained but are subjected to occasional flooding during periods of heavy or extended precipitation. Includes associated levees, benches, and terraces. Excludes swamps, sloughs, and bogs with year-round water problems.",N
+29,OtherMesic,Other Mesic - All moderately moist physiographic sites not already described.,N
+31,SwampBog,"Swamps / Bogs - Low, wet, flat forested areas usually quite extensive that are flooded for long periods of time except during periods of extreme drought. Excludes cypress ponds and small drains.",N
+32,SmallDrain,"Small Drains - Narrow, stream-like, wet strands of forest land often without a well-defined stream channel. These areas are poorly drained or flooded throughout most of the year and drain the adjacent higher ground.",N
+33,Bay,"Bays and wet pocosins - Low, wet, boggy sites characterized by peaty or organic soils. May be somewhat dry during periods of extended drought. Examples include the Carolina bays in the southeast US.",N
+34,BeaverPond,Beaver ponds,N
+35,CypressPond,Cypress ponds,N
+36,Forest/NonForest on Permafrost,"Low-lying, sometimes wet, flat areas, often characterized by a thick moss layered ground surface, sometimes comprised of tussocks that tend to form a waterlogged soils layer as the active layer thaws seasonally. Permafrost may be visible or detected with a soil probe. At later periods in the season when permafrost cannot be detected, waterlogged soils layered on top of deeper permafrost are possible.",N
+39,OtherHydric,Other hydric - All other hydric physiographic sites.,N

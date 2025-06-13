@@ -1,0 +1,10 @@
+VALUE,ABBR,MEANING,RETIRED
+1,<=100,100 ft. or less,N
+2,101-300,101 to 300 ft.,N
+3,301-500,301 to 500 ft.,N
+4,501-1000,501 to 1000 ft.,N
+5,1001-1/2 Mile,1001 ft. to 1/2 mile,N
+6,1/2 Mile - 1 Mile,1/2 to 1 mile,N
+7,1 Mile - 3 Miles,1 to 3 miles,N
+8,3 Miles - 5 Miles,3 to 5 miles,N
+9,> 5 Miles,Greater than 5 miles,N

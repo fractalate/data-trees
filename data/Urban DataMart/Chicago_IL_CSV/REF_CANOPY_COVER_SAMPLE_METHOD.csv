@@ -1,0 +1,10 @@
+VALUE,ABBR,MEANING,RETIRED
+1,Ocular,Ocular Method,N
+2,Sub-acre,"Sub-acre method - The Sub-Acre method is only used when the ocular method is not appropriate.
+1. Ensure that the canopy cover sample area is representative of the condition in question.
+2. Determine if minimum 10% LIVE PLUS MISSING CANOPY COVER is reached. The crew samples all live, dead, and missing tree canopies on the canopy cover sample plot as described above in LIVE PLUS MISSING CANOPY COVER. The 10% threshold is dependent on the sample plot size and respective area in square feet.
+3. If the 10% LIVE PLUS MISSING CANOPY COVER threshold is met and there is additional LIVE PLUS MISSING CANOPY COVER on the sub-acre plot, crews can estimate the remaining LIVE PLUS MISSING CANOPY COVER using the ocular method.
+4. The temporary sub-acre subplot must fall entirely in the questionable condition.
+
+",N
+3,Acre,Acre method (one 118 foot radius plot installed),N

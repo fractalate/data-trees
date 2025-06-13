@@ -1,0 +1,32 @@
+VALUE,ABBR,MEANING,RETIRED
+0,None,None - no observable disturbance,N
+10,Insect,Insect damage (to both understory vegetation and trees),N
+11,,insect damage to understory vegetation,N
+12,,"insect damage to trees, including seedlings and saplings",N
+20,Disease,Disease damage (to both understory vegetation and trees),N
+21,,disease damage to understory vegetation,N
+22,,"disease damage to trees, including seedlings and saplings",N
+30,Fire,"Fire (from crown and ground fire, either prescribed or natural)",N
+31,,ground fire,N
+32,,crown fire,N
+40,Animal,Animal damage (other than listed below),N
+41,,beaver (includes flooding caused by beaver),N
+42,,porcupine,N
+43,,deer/ungulate,N
+44,,bear (CORE OPTIONAL),N
+45,,rabbit (CORE OPTIONAL),N
+46,,domestic animal/livestock (includes grazing),N
+50,Weather,Weather damage (other than listed below),N
+51,,ice,N
+52,,"wind (includes hurricane, tornado)",N
+53,,flooding (weather induced),N
+54,,drought,N
+60,Vegetation,"Vegetation (suppression, competition, vines)",N
+70,Unknown,Unknown/not sure/other,N
+80,Human,Human-caused damage – any significant threshold of human-caused damage not described in the DISTURBANCE codes listed or in the TREATMENT codes listed. Must include a condition-level note to describe further.,N
+90,Geologic,Geologic disturbances,N
+91,,landslide,N
+92,,avalanche track,N
+93,,volcanic blast zone,N
+94,,other geologic event,N
+95,,earth movement/avalanches,N

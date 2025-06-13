@@ -1,0 +1,3 @@
+From: U.S. Department of Agriculture Forest Service Urban DataMart
+URL: https://apps.fs.usda.gov/fia/datamart/urban/Chicago_IL_CSV.zip
+Download Date: June 12, 2025

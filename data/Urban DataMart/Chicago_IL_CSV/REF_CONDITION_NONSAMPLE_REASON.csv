@@ -1,0 +1,11 @@
+VALUE,ABBR,MEANING,RETIRED
+1,OutOfBoundary,Outside U.S. boundary - condition classes beyond the U.S. border,N
+10,Other,Other –  not sampled due to a reason other than one of the specific reasons listed. A field note is required to describe the situation.,N
+11,Ocean,Ocean – Condition falls in ocean water below mean high tide line,N
+2,Denied Access,"Denied access area – Any area within the sampled area of a plot to which access is denied by the legal owner, or to which an owner of the only reasonable route to the plot denies access. There are no minimum area or width requirements for a condition class delineated by denied access. Because a denied-access condition can become accessible in the future, it remains in the sample and is re-examined at the next occasion to determine if access is available.",N
+3,Hazardous,"Hazardous situation – Any area within the sampled area on plot that cannot be accessed because of a hazard or danger, for example cliffs, quarries, strip mines, illegal substance plantations, temporary high water, etc. Although the hazard is not likely to change over time, a hazardous condition remains in the sample and is re-examined at the next occasion to determine if the hazard is still present. There are no minimum size or width requirements for a condition class delineated by a hazardous condition.",N
+5,LostData,"Lost data – Plot data file was discovered to be corrupt after a panel was completed and submitted for processing. This code is assigned to entire plots or full subplots that could not be processed, and is applied at the time of processing after notification to the region.  This code is for office use only.",N
+6,LostPlot,Lost plot – Entire plot cannot be found.,N
+7,WrongLocation,"Wrong location - Previous plot can be found, but its placement is beyond the tolerance limits for plot location.",N
+8,SkippedVisit,Skipped visit - Entire plot skipped. Used for plots that are not completed prior to the time a panel is finished and submitted for processing. This code is for office use only.,N
+9,DroppedIntensifiedPlot,Dropped intensified plot - Intensified plot dropped due to a change in grid density. This code used only by units engaged in intensification. This code is for office use only.,N

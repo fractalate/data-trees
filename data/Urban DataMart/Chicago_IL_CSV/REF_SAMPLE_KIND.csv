@@ -1,0 +1,7 @@
+VALUE,ABBR,MEANING,RETIRED
+1,InitialEstablishment,"Initial plot establishment and sampling of a national design plot (FIA Field Guide versions 1.1 and higher). SAMPLE KIND 1 is assigned under the following circumstances:
+• Initial activation of a panel or subpanel
+• Reactivation of a panel or subpanel that was previously dropped
+• Resampling of established plots that were not sampled at the previous visit",N
+2,Remeasurement,Remeasurement – remeasurement of a national design plot that was sampled at the previous inventory,N
+3,Replacement,Replacement plot - a replacement plot for a previously established plot.,N

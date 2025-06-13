@@ -1,0 +1,4 @@
+VALUE,ABBR,MEANING,RETIRED
+1,Total & Actual Measured,"Total and actual lengths are field measured with a measurement instrument (e.g., clinometer, relascope, tape, Laser).",N
+2,Total Estimated/Actual Measure,"Total length is visually estimated, actual length is measured with an instrument.",N
+3,Total & Actual Estimated,Total and actual lengths are visually estimated.,N

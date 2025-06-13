@@ -1,10 +1,10 @@
 # Tree Data Research
 
-## Links
+## Index
 
 * [U.S. Department of Agriculture Forest Service Urban DataMart](https://research.fs.usda.gov/products/dataandtools/urban-datamart)
-  - Contains datasets of interest regarding urban forests.
-    - TODO: Integrate the dataset into the repository somehow so it's available (and updatable).
-  - Of interest is the [Urban Forest Inventory and Analysis Database User Guide](https://research.fs.usda.gov/understory/urban-forest-inventory-and-analysis-database-user-guide).
-    - [Revision 11.01.2024](./documents/Urban%20DataMart/wo-v10-0_nov2024_ug_urbanfiadb_database_description.pdf) (Off-line Copy)
-  - TODO: Current interest in this data is to gain an understanding about the trees in urban Chicago.
+  - [Urban Forest Inventory and Analysis Database User Guide](./documents/Urban%20DataMart/wo-v10-0_nov2024_ug_urbanfiadb_database_description.pdf)
+    - Provides detailed information about the tables and columns in the dataset.
+    - Downloadable at [https://research.fs.usda.gov/understory/urban-forest-inventory-and-analysis-database-user-guide](https://research.fs.usda.gov/understory/urban-forest-inventory-and-analysis-database-user-guide).
+  - [Chicago, IL Dataset](./data/Urban%20DataMart/Chicago_IL_CSV/)
+    - Downloadable at [https://research.fs.usda.gov/products/dataandtools/urban-datamart](https://research.fs.usda.gov/products/dataandtools/urban-datamart).
