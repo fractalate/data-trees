@@ -7,4 +7,5 @@
     - Provides detailed information about the tables and columns in the dataset.
     - Downloadable at [https://research.fs.usda.gov/understory/urban-forest-inventory-and-analysis-database-user-guide](https://research.fs.usda.gov/understory/urban-forest-inventory-and-analysis-database-user-guide).
   - [Chicago, IL Dataset](./data/Urban%20DataMart/Chicago_IL_CSV/)
+    - [Exploration of the Dataset](./explore_chicago_il.ipynb)
     - Downloadable at [https://research.fs.usda.gov/products/dataandtools/urban-datamart](https://research.fs.usda.gov/products/dataandtools/urban-datamart).
