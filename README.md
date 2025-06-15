@@ -1,4 +1,4 @@
-# Tree Data Research
+# Trees of Chicago Data Analysis and Visualization 
 
 ## Index
 
