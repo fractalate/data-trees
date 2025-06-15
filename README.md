@@ -1,4 +1,4 @@
-# Trees of Chicago Data Analysis and Visualization 
+# Trees of Chicago Data Analysis and Visualization
 
 ## Index
 
