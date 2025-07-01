@@ -8,6 +8,13 @@ The USDA Forest Service data is public domain and is included in this repository
 
 You can find the WCVP dataset on the [WCVP file server](http://sftp.kew.org/pub/data-repositories/WCVP/). Please download `wcvp_dwca.zip` (I used version 14). Put it in `data/wcvp_dwca` and unzip it.
 
+## Python Libraries
+
+* `jupyter`
+* `matplotlib`
+* `scipy`
+* `pyproj`
+
 ## Citations
 
 [U.S. Department of Agriculture Forest Service Urban DataMart](https://research.fs.usda.gov/products/dataandtools/urban-datamart)
