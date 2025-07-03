@@ -12,8 +12,10 @@ You can find the WCVP dataset on the [WCVP file server](http://sftp.kew.org/pub/
 
 * `jupyter`
 * `matplotlib`
-* `scipy`
+* `numpy`
+* `pandas`
 * `pyproj`
+* `scipy`
 
 ## Citations
 
